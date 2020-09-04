@@ -1,0 +1,184 @@
+html {
+  font-size: 62.5%;
+}
+div {
+  font-size: 100%;
+}
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: lato, sans-serif;
+  font-size: 1.6em;
+  color: #313537;
+}
+.noOutline {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.block-flashcards {
+  padding: 3rem 0;
+  transition: padding 0.5s;
+}
+
+.block-flashcards__wrapper {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 102rem;
+  text-align: center;
+}
+
+@media (min-width: 33.75em) {
+  .block-flashcards__wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* block-flashcard block-flashcard--small block-flashcard--first block-flashcard--flipped */
+.react-card-flip {
+}
+.block-flashcard--small {
+  max-width: 280px;
+  max-height: 280px;
+}
+
+.block-flashcard__back,
+.block-flashcard__front {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 1.2rem 0.2rem rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.block-flashcard__front .block-flashcard__content {
+  border-top: 3px solid #eee;
+}
+
+.brand--border {
+  border-color: #747a7e !important;
+}
+
+.block-flashcard__content {
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.block-flashcard--small .block-flashcard__center {
+  margin: 5.5rem 2.5rem 5.7rem;
+}
+
+.block-flashcard__center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 6.8rem 4rem 7rem;
+  width: 100%;
+}
+
+.block-flashcard__description {
+  flex: 0 1 auto;
+  margin: auto 0;
+  width: 100%;
+  font-size: 2.9rem;
+  font-weight: 300;
+  line-height: 1.25;
+  text-align: center;
+  word-break: break-word;
+}
+
+.block-flashcard__front .block-flashcard__content {
+  border-top: 3px solid #eee;
+}
+
+.block-flashcard__center {
+  margin: 5.5rem 2.5rem 5.7rem;
+}
+
+.react-card-flipper {
+  position: fixed !important;
+}
+
+.block-flashcard__flip {
+  align-items: flex-end;
+  background-color: transparent;
+  border: none;
+  bottom: 0;
+  color: #707070;
+  cursor: pointer;
+  display: flex;
+  line-height: 1;
+  padding: 1.25rem;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+}
+
+.block-flashcard__back {
+  opacity: 1;
+  background-color: #fafafa;
+  width: 107%;
+  height: 107%;
+  z-index: 100;
+}
+
+.block-flashcard__back {
+  z-index: 1;
+}
+
+.block-flashcard__back--fullimage .block-flashcard__content,
+.block-flashcard__front--fullimage .block-flashcard__content {
+  background-size: cover;
+  background-position: 50% 50%;
+  border: 1px solid #ddd !important;
+}
+
+@media (min-width: 30em) {
+}
+.block-flashcard--small .block-flashcard__center--long {
+  margin: 2.5rem 0;
+  padding: 0 2.5rem;
+}
+
+.block-flashcard--small .block-flashcard__center--long {
+  margin: 2rem 0;
+  padding: 0 4rem;
+}
+
+.block-flashcard__center--long {
+  margin: 2rem 0;
+  padding: 0 4rem;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* .block-flashcard__center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 6.8rem 4rem 7rem;
+    width: 100%;
+} */
+
+.block-flashcard__center--long .block-flashcard__description {
+  font-size: 2rem;
+  line-height: 1.5625;
+  text-align: left;
+}
